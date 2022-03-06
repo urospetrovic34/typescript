@@ -1,0 +1,33 @@
+TYPESCRIPT TUTORIAL
+
+what is typescript ?
+
+-alternative language to javascript, it's a superset of javascript language which means it extends the language with new features and syntax.
+
+-browsers by default don't understand typescript like they do javascript, so we have to compile it into javascript first in order for browsers to understand it.
+
+-javascript with types
+
+-first significant features is possibility of using strict types, which means that we can't change previously declared type of a value, error checking process is more practical and the code is cleaner
+
+-it supports modern features of js like arrow funcs and let/const, it can translate to older javascript code which doesn't support these features
+
+-it has some extra features, like generics, interfaces, tuples etc.
+
+project for this practice will be a simple finance logger to notify dynamic payments and invoices
+
+we need to install typescript compiler
+
+in main command prompt: 
+npm i -g typescript 
+
+part 1: compiling typescript
+
+have some html & css code prepared
+
+to simply compile typescript code, type next thing in terminal:
+tsc main.ts main.js
+if the files are of the same name you can simply type:
+tsc main.ts
+
+there is an error that appears after compiling ts code, but this error doesn't affect anything 'cause it's from a typescript file and that file never appears itself in a real code
