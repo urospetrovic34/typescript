@@ -31,3 +31,24 @@ if the files are of the same name you can simply type:
 tsc main.ts
 
 there is an error that appears after compiling ts code, but this error doesn't affect anything 'cause it's from a typescript file and that file never appears itself in a real code
+
+we don't have to manually compile ts code every time, there is a way for it to be automatically updated, just type this in terminal:
+tsc main.ts -w
+
+part 2: type basics
+
+main fundamental difference between ts and js is that typescript uses strict types. That means that if we define a variable as a string it will always be a string in typescript, same goes for other types. There is a number type which covers all of integers, floats and doubles in one.
+
+In typescript we can define the type of an argument for a function
+
+Type checking isn't done in runtime in the browser, rather it's done before we compile. It will not compile to javascript if a wrong type is being sent.
+
+part 3: objects and arrays
+
+when we declare a new array, the types that we initially assign to the array cannot be changed afterwards. We can declare a mixed array if we want to. If we declare an empty object, it can contain any type.
+
+properties inside of an object function the same way as variables do in arrays. If we declare a property to be of one type, we can't change that type. We cannot add extra properties once we've defined the object.  We cannot also override types of arrays and objects, so if we declare an array we can't change it to be a string or number, same goes for objects. We can declare a new array or object with the same name as a previous array or object. For objects it goes further, once we declare an object and define its properties we have to have all of those props if we want to override it's values.
+
+Typescript is quite strict when it comes type definitions, but down the line that's a good thing, because it will prevent errors.
+
+part 4: explicit types
