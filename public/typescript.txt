@@ -116,3 +116,8 @@ if declared that way, similar way to strings, numbers and booleans
 it can also be explicitly declared
 
 in typescript void and undefined are separate values
+
+part 8: type aliases
+
+sometimes when we specify types in parameters there can be a lot of
+reudndant code, so there are type aliases for this kind of stuff
