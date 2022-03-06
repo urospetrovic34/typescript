@@ -79,3 +79,30 @@ What this means essentially is that if we declare this variable
 to be a number at the start, it can be subsequently changed to 
 a boolean or string or whatever. So this kind of represents classic
 javascript variables, it's not generally useful but it's there just in case
+
+part 6: workflow & tsconfig
+
+for one ts file we get one js file
+but in case of a bigger project we might have multiple ts/js files 
+separated in multiple folders
+usually there are two folders, one is public for final public stuff
+which we deploy, and there is src folder where our source code goes
+like ts files
+
+we can initialize tsconfig.json file, which contains typescript 
+compiling and configuration options for that just 
+type in root folder in terminal:
+tsc --init
+
+we then define the root directory to be ./src
+and out directory to be ./public
+
+now we can just type:
+tsc 
+or
+tsc -w
+to compile our ts code
+
+to include only files inside of the src folder, add a property
+at the end that goes "include":["src"], with this
+it won't compile anything outside the src folder
