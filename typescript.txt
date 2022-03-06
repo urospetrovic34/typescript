@@ -52,3 +52,22 @@ properties inside of an object function the same way as variables do in arrays. 
 Typescript is quite strict when it comes type definitions, but down the line that's a good thing, because it will prevent errors.
 
 part 4: explicit types
+
+when we write our variables and assign values, typescript automatically infers their type.
+Sometimes it's better to initialize the variable without giving out a value, so it won't infer 
+it's type and we can give anything to it later on.
+
+We can explicitly give variable a type. So we initialize the variable, without giving it a value but in future only the type we assigned it to can be given to it.
+
+Explicit types are given fairly simply. Arrays are given similar to some classic programming languages, 
+so for example string array is string[], boolean array is boolean[] etc.
+
+It is commendable to initialize it to be an empty array to begin with, because 
+then we can do .push() method on it.
+
+For mixed arrays we use union types, which is declared similarly to arrays,
+except we put all the types we want in brackets so something like this: (string|number)
+
+Union types can also be used for normal variables, not just for arrays.
+One thing that is allowed in ts is conversion of objects to arrays, because 
+array are in a way a type of object
