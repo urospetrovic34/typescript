@@ -71,3 +71,11 @@ except we put all the types we want in brackets so something like this: (string|
 Union types can also be used for normal variables, not just for arrays.
 One thing that is allowed in ts is conversion of objects to arrays, because 
 array are in a way a type of object
+
+part 5: dynamic/any types
+
+we can declare a variable to be of any type. 
+What this means essentially is that if we declare this variable
+to be a number at the start, it can be subsequently changed to 
+a boolean or string or whatever. So this kind of represents classic
+javascript variables, it's not generally useful but it's there just in case
