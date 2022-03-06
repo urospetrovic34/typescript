@@ -106,3 +106,13 @@ to compile our ts code
 to include only files inside of the src folder, add a property
 at the end that goes "include":["src"], with this
 it won't compile anything outside the src folder
+
+part 7: function basics
+
+function type in ts
+ts automatically infers that the type of the variable is a function
+if declared that way, similar way to strings, numbers and booleans
+
+it can also be explicitly declared
+
+in typescript void and undefined are separate values
