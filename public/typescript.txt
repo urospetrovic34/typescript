@@ -132,3 +132,16 @@ it returns.
 the name we give to the arguments in function signature doesn't
 have to be the same name when we create a function object of this
 signature
+
+part 10: dom interaction & typecasting
+
+just like js, we can use ts to interact with the dom
+we can still access all of the same properties inside of dom
+there are a few different differences though:
+typescript doesn't actually know whether there is a certain element
+in html page, so it returns possible null object
+
+ts recognizes special html types so it has different properties,
+so if we use query selector for an anchor tag, it will know
+that the object is an HTMLAnchorElement and it has all of it's
+properties
