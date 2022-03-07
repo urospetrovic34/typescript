@@ -149,3 +149,16 @@ properties
 part 11: classes
 
 classes are very similar to js, i.e. blueprint for an object
+
+part 12: public, private & readonly
+
+all properties in classes in js/ts are public by default 
+we can use access modifiers to determine
+how a user access different properties in a class
+
+with private property, we can access it using a method inside of 
+a class, but we cannot access it from outside of a class
+on the instance directly, so it won't compile it that way
+
+readonly means that we cann access it from both inside and outside
+of a class, but we cannot change it
