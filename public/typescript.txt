@@ -180,3 +180,9 @@ interface allows us to enforce a certain structure of a class
 or an object, we can use it to describe what properties or methods
 there are. We just use it to enforce the certain structure of class
 or object.
+
+part 15: interfaces with classes
+
+every instance of an object that we create from a class
+that implements certain interface has to follow the structural 
+rules enforced by the interface

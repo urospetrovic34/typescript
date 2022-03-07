@@ -1,5 +1,9 @@
+import {HasFormatter} from '../interfaces/HasFormatter.js'
+
 //classes
-export class Invoice {
+//when we implement HasFormatter it means that
+//this class must follow the structure of HasFormatter interface
+export class Invoice implements HasFormatter {
     // readonly client: string;
     // private details: string;
     // public amount: number;

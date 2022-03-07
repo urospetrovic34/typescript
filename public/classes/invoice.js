@@ -1,4 +1,6 @@
 //classes
+//when we implement HasFormatter it means that
+//this class must follow the structure of HasFormatter interface
 export class Invoice {
     // readonly client: string;
     // private details: string;
