@@ -145,3 +145,7 @@ ts recognizes special html types so it has different properties,
 so if we use query selector for an anchor tag, it will know
 that the object is an HTMLAnchorElement and it has all of it's
 properties
+
+part 11: classes
+
+classes are very similar to js, i.e. blueprint for an object
