@@ -173,3 +173,10 @@ This requires modern browsers to work.
 for starters, go to tsconfig and change module to es2015
 and change target to es6
 change in index.html script tag to be a module
+
+part 14: interfaces
+
+interface allows us to enforce a certain structure of a class
+or an object, we can use it to describe what properties or methods
+there are. We just use it to enforce the certain structure of class
+or object.
