@@ -121,3 +121,14 @@ part 8: type aliases
 
 sometimes when we specify types in parameters there can be a lot of
 reudndant code, so there are type aliases for this kind of stuff
+
+part 9: function signatures
+
+since we can declare that a variable can be any type of function,
+we can go step further by specifying a function signature,
+that is a general structure of a function like what type of data
+it returns. 
+
+the name we give to the arguments in function signature doesn't
+have to be the same name when we create a function object of this
+signature
