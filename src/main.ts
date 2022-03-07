@@ -1,21 +1,7 @@
-//classes
-class Invoice {
-    // readonly client: string;
-    // private details: string;
-    // public amount: number;
-
-    //it automatically assigns these values this way
-    //but it has to have access modifiers listed
-    constructor(
-        readonly client: string,
-        private details: string,
-        public amount: number
-    ) {}
-
-    format() {
-        return `${this.client} owes £${this.amount} for ${this.details}`;
-    }
-}
+//it is not .ts extension, rather it is .js extension
+//for importing modules we have to set composite option
+//in tsconfig to false
+import { Invoice } from "./classes/Invoice.js";
 
 const invOne = new Invoice("Mario", "Work on the Mario Website", 250);
 const invTwo = new Invoice("Luigi", "Work on the Luigi Website", 300);

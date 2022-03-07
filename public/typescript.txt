@@ -162,3 +162,14 @@ on the instance directly, so it won't compile it that way
 
 readonly means that we cann access it from both inside and outside
 of a class, but we cannot change it
+
+part 13: modules
+
+it's typically better to have multiple files for different
+stuff in ts/js, that makes project more structured and easier
+to maintain. For that we use ES6 module system.
+This requires modern browsers to work.
+
+for starters, go to tsconfig and change module to es2015
+and change target to es6
+change in index.html script tag to be a module
