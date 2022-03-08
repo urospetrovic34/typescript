@@ -186,3 +186,10 @@ part 15: interfaces with classes
 every instance of an object that we create from a class
 that implements certain interface has to follow the structural 
 rules enforced by the interface
+
+part 16: rendering an html template
+
+registering a list container, i.e. ul in the constructor
+and then create a render method to render a new li to the container
+which will accept arguments, and then create a html template of li
+and add it to the end of the list
