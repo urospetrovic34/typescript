@@ -193,3 +193,8 @@ registering a list container, i.e. ul in the constructor
 and then create a render method to render a new li to the container
 which will accept arguments, and then create a html template of li
 and add it to the end of the list
+
+part 17: generics
+
+generics are a feature that allow us to create reusable blocks of 
+code which can be used with different types
