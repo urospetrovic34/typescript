@@ -43,12 +43,15 @@ const list = new ListTemplate(ul);
 form.addEventListener("submit", (e: Event) => {
     e.preventDefault();
 
+    let values: [string, string, number];
+    values = [toFrom.value, details.value, amount.valueAsNumber];
+
     let doc: HasFormatter;
 
     if (type.value === "invoice") {
-        doc = new Invoice(toFrom.value, details.value, amount.valueAsNumber);
+        doc = new Invoice(...values);
     } else {
-        doc = new Payment(toFrom.value, details.value, amount.valueAsNumber);
+        doc = new Payment(...values);
     }
 
     list.render(doc, type.value, "end");
@@ -67,32 +70,16 @@ const addUID = <T extends { name: string }>(obj: T) => {
 
 // let docOne = addUID({ name: "yoshi", age: 40 });
 
-//enums
+//tuples
 
-enum ResourceType {
-    BOOK,
-    AUTHOR,
-    FILM,
-    DIRECTOR,
-    PERSON,
-}
+let array = ["ryu", 25, true];
+array[0] = false;
+array[1] = "yoshi";
+array = [30, false, "betmen"];
 
-interface Resource<T> {
-    uid: number;
-    resourceType: ResourceType;
-    data: T;
-}
+let tuple: [string, number, boolean] = ["ryu", 35, true];
+tuple[0] = "m.bison";
+// tuple[0] = 25
 
-const docOne: Resource<object> = {
-    uid:1,
-    resourceType: ResourceType.BOOK,
-    data:{title:'name of the wind'}
-}
-
-const docTwo: Resource<object> = {
-    uid:11,
-    resourceType: ResourceType.PERSON,
-    data:{title:'name of the wind'}
-}
-
-console.log(docOne,docTwo)
+let student: [string, number];
+student = ["akuma", 25000];

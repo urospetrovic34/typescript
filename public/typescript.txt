@@ -203,3 +203,8 @@ part 18: enums
 
 enums allow us to store setup constants oder keywords and associate
 them with numeric value
+
+part 19: tuples
+
+tuple is similar to array and can use array methods, but the difference is That
+types of data in each position in tuple are fixed once it's initalized
