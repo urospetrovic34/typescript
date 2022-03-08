@@ -198,3 +198,8 @@ part 17: generics
 
 generics are a feature that allow us to create reusable blocks of 
 code which can be used with different types
+
+part 18: enums
+
+enums allow us to store setup constants oder keywords and associate
+them with numeric value
